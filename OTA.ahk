@@ -1,8 +1,11 @@
+SetWorkingDir, %A_ScriptDir%
 #include JSON.ahk
 
-global gh_repo = "clangremlini/aye-ahk-loader"
-global file_to_download = "loader.exe"
-global file_to_saving = "loader"
+global gh_repo = "samfisherirl/Geo11_Mod_Manager"
+global file_to_download = "Geo11_Mod_Manager.zip"
+global file_to_saving = "Geo11_Mod_Manager"
+
+msgbox % OTA.checkupd()
 
 class OTA
 {
@@ -29,8 +32,8 @@ class OTA
     download(value)
     {
         download_url := "https://github.com/" gh_repo "/releases/download/" value "/" file_to_download 
-        UrlDownloadToFile, %download_url%, %file_to_saving%-%value%.exe
-        Run, %file_to_saving%-%value%.exe
+        UrlDownloadToFile, %download_url%, %file_to_saving%-%value%.zip
+        Run, %file_to_saving%-%value%.zip
         ExitApp
     }
 }
