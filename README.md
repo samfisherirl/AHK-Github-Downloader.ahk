@@ -1,7 +1,10 @@
-# AHK OTA CLASS
+# FORKED FROM OTK.ahk  https://github.com/clangremlini/OTA.ahk
+
+Download github repo from ahk. No knowledge needed. 
 
 ## How to use
 
+I changed the script to run out of the box for dummies like me that need their hand held. 
 
 - Specify the name of the github repository in the OTA.ahk file (`line #3`)
 - Specify the name of the file to be loaded from the latest release (`line #4`)
